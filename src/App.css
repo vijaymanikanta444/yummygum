@@ -110,10 +110,13 @@
 
 .labelOption {
   font-size: 20px;
+  padding-left: 15px;
 }
 
 .options {
-  justify-content: center;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
 }
 
 .button {
@@ -211,4 +214,29 @@
 
 .zindex {
   z-index: 1;
+}
+
+.input {
+  padding: 5px;
+  margin: 10px;
+  height: 25px;
+  width: 400px;
+  display: block;
+  border: white 2px solid;
+  border-radius: 20px;
+  outline: none;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 20px;
+  font-size: 32px;
+  transition: 1000ms;
+}
+
+.error {
+  padding-left: 30px;
+  font-size: 20px;
 }

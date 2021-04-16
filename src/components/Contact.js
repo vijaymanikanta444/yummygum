@@ -8,7 +8,7 @@ import Yourgreatproject from './forms/Yourgreatproject';
 
 export class Contact extends Component {
   state = {
-    selected: 'planavideocall',
+    selected: '/planavideocall',
   };
 
   click = (e) => {
@@ -24,16 +24,16 @@ export class Contact extends Component {
       <div
         className="contactBlock"
         style={{
-          left: this.props.slide == true ? '25%' : '720px',
+          left: this.props.slide == true ? '10%' : '720px',
           width: this.props.slide == true ? '90%' : '650px',
         }}
       >
         {window.location.pathname == '/' ? (
           <Demo click={this.click} next={this.props.next} state={this.state} />
         ) : window.location.pathname == '/yourgreatproject' ? (
-          <Yourgreatproject />
+          <Birdsandbees />
         ) : window.location.pathname == '/meetingforacoffee' ? (
-          <Meetingforacoffee />
+          <Birdsandbees />
         ) : window.location.pathname == '/planavideocall' ? (
           <Planavideocall />
         ) : (

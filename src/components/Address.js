@@ -5,7 +5,7 @@ export default function Address(props) {
   return (
     <div
       className="addressBlock"
-      style={{ left: props.slide == true ? '-60%' : '-37%' }}
+      style={{ left: props.slide == true ? '-85%' : '-37%' }}
     >
       <div>
         <h1 className="addressT1">We’re here</h1>
